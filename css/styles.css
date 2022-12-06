@@ -95,15 +95,13 @@ body {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .header-link:hover,
 .header-link:focus
  {
     color: var(--accent-color);
 }
 
-
-.header-link.studio::after {
+.header-link.active-page::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -114,40 +112,11 @@ body {
     width: 100%;
     border-radius: 2px;
     background-color: var(--accent-color);
-    /* opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.header-link.portfolio::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-
-    content: "";
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-    /* opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
-/* .header-link.studio:hover::after{
-    opacity: 1;
-} */
-
-
-
-/* .header-link.studio:hover::after,
-.header-link:focus::after,
-{
-    opacity: 1;
-} */
-/* 
-.header-link:active::after,
-.header-link:visited::after */
 
 /* header contact */
 
@@ -711,6 +680,9 @@ position: relative;
 overflow: hidden;
 }
 
+/* .grid-item{
+    position: relative;
+} */
 
 .grid-overlay {
     position: absolute;
