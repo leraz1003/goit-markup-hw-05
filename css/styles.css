@@ -39,7 +39,6 @@ body {
 .header {
     border-bottom: 1px solid #ECECEC;
     display: block;
-    max-width: 1600px;
     height: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -680,9 +679,6 @@ position: relative;
 overflow: hidden;
 }
 
-/* .grid-item{
-    position: relative;
-} */
 
 .grid-overlay {
     position: absolute;
@@ -690,16 +686,12 @@ overflow: hidden;
     top: 0;
     width: 100%;
     height: 294px;
-   
     background-color: rgba(33, 150, 243, 0.9);
 
-    opacity: 0;
     overflow: hidden;
     
-
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .grid-desc {
@@ -710,7 +702,6 @@ overflow: hidden;
     
     color: #FFFFFF;
     margin: 63px 24px ;
-
     
 }
 
